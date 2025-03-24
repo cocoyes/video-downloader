@@ -121,6 +121,6 @@ func main() {
 
 	handler := cors.Default().Handler(mux)
 
-	port := os.Args[1]
+	port := "8090"
 	log.Fatal(http.ListenAndServe(":"+port, handler))
 }
